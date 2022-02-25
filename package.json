@@ -1,0 +1,34 @@
+{
+
+  "name": "appsample",
+
+  "version": "1.0.0",
+
+  "type": "module",
+
+  "description": "Learning Node",
+
+  "main": "app.js",
+
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+
+  "author": "Chikeluba Anusionwu",
+
+  "license": "ISC",
+
+  "dependencies": {
+
+    "@defichain/jellyfish": "^0.44.0",
+
+    "@defichain/whale-api-client": "^0.26.1",
+
+    "defichain": "^2.21.0"
+
+  }
+
+}
+
