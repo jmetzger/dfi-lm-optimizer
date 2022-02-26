@@ -7,7 +7,6 @@ import { WhaleApiClient } from '@defichain/whale-api-client'
 import { WhaleWalletAccount } from "@defichain/whale-api-wallet";
 
 
-//console.log (process.env)
 const _priv_key       = process.env.DFI_WALLET_ADDRESS_PRIV_KEY
 const _wallet         = process.env.DFI_WALLET_ADDRESS
 const _vault_id       = process.env.DFI_WALLET_ADDRESS_VAULT_ID 
@@ -95,19 +94,35 @@ async function main(){
      await console.log('priv key:' + _priv_key)
      await console.log('wallet:' + _wallet)
      await setup()
-     //await listVault()
 
      var utxos = await getUTXOBalance()
      console.log("start utxos = " + utxos)
      var balance = await getTokenBalance('DFI')
      console.log("start balance = " + balance?.amount + " " + balance?.symbol)
 
-     const success = await depositToVault('DFI', new BigNumber(0.1))
 
-     utxos = await getUTXOBalance()                        
-     console.log("end utxos = " + utxos)                     
-     balance = await getTokenBalance('DFI')                
-     console.log("end balance = " + balance?.amount + " " + balance?.symbol)
+     let balanceAll = utxos.plus(await new BigNumber(balance.amount))
+     /**
+      * Should we deposit or not  
+      **/
+     if (balanceAll > await new BigNumber(0.2)){
+        
+        console.log("balance (all_in_all) " + balanceAll) 
+        let balance2Deposit = balanceAll.minus(await new BigNumber(0.1))
+        console.log("balance (depositing) " + balance2Deposit)     
+        const success = await depositToVault('DFI', balance2Deposit)   
+
+     }
+     else {
+        console.log("balance (all_in_all) " + balanceAll)
+        console.log("Not enough to deposit")
+
+     }
+
+     //utxos = await getUTXOBalance()                        
+     //console.log("end utxos = " + utxos)                     
+     //balance = await getTokenBalance('DFI')                
+     //console.log("end balance = " + balance?.amount + " " + balance?.symbol)
      //let _pairs = await api.poolpairs.list()
      //console.log (_pairs) 
 
@@ -135,16 +150,6 @@ async function listVault(){
     if (_informativeRatio > _softMinColRatio){
        console.log('We can take on more loan')
 
-       /**
-        * Decide which load to take on  
-        * We take the one with the highest APR 
-        **/
- 
-       //const client = new Client()       
-       //const something = await client.poolpair.listPoolPairs()
-       //main() 
-       
-
     }
     else {
        console.log('We must get rid of some loan')
@@ -154,7 +159,9 @@ async function listVault(){
   })
 }
 
-main()
+setInterval(() => {
+  main()
+}, 300000); // 1000 = 1s * 60 * 5 (5 minutes)                                                                                
 
 process.on('exit', (code) => {
   // you will never see this
