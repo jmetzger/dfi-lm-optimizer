@@ -21,7 +21,7 @@ To be able to let this work, you will need you private key of your DeFiChain Lig
 Because it is not possible to extract it directly from the app, you will need to do the following 
 steps (it does not work with saiive.live - mobile version IOS !!) 
 
-Download SIIAVE.live for your Desktop (tested it on OSX, but should work the same for Windows) 
+Download saiive.live - wallet for your Desktop (tested it on OSX, but should work the same for Windows) 
 https://apps.apple.com/app/saiive-live-defi-wallet/id1588945201
 
 Now you need to import your wallet using the 24 words 
