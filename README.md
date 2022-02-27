@@ -1,4 +1,4 @@
-# DefiChain Liquidity Minining Balancer
+# DefiChain Liquidity Miniing Balancer
 
 ## Important 
 
@@ -9,6 +9,8 @@ It is good the walk through the code and look what is does and test it.
 
 Currently this script will only deposit your DFI into a given Vault (every 5 minutes) 
 As I had to do this manually and I do not like it, this is what the script 
+
+It uses JellyFish and the OceanAPI. So need to run a full node to use it (leightweight) 
 
 I works on a small footprint and it should be sufficient to run this 
 on the smallest droplet (virtual machine) on DigitalOcean or on your Raspberry PI. 
