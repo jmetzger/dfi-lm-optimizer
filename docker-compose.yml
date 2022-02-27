@@ -3,6 +3,6 @@ version: "3.8"
 services:
 
   optimizer:
-    build: ./optimizer/
+    build: .
     env_file:
       - .dummy.env
