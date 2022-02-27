@@ -19,7 +19,7 @@ on the smallest droplet (virtual machine) on DigitalOcean or on your Raspberry P
 
 To be able to let this work, you will need you private key of your DeFiChain Light Wallet (mobile) 
 Because it is not possible to extract it directly from the app, you will need to do the following 
-steps (it does not work with SIIAVE Live - mobile version IOS !!) 
+steps (it does not work with saiive.live - mobile version IOS !!) 
 
 Download SIIAVE.live for your Desktop (tested it on OSX, but should work the same for Windows) 
 https://apps.apple.com/app/saiive-live-defi-wallet/id1588945201
