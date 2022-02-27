@@ -1,4 +1,4 @@
-# DefiChain Liquidity Miniing Balancer
+# DefiChain Liquidity Mining Balancer
 
 ## Important 
 
