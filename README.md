@@ -39,7 +39,7 @@ I. Download / Install / Import Wallket (24 words)
   4. Agree to Terms of Usage
   5. Enter a new pin (need to remember this one) 
   6. Enter you 24 words (you should have noted or get from DFI Lite Wallet) + click on the button
-  7. Be patient, it will take its time (take at least 15 minutes into account)
+  7. Be patient, it will take its time (take at least 20 minutes into account)
 
 II. After that saivve should: 
   * Present you one wallet (in my case: DFIJellyFishBS1) 
