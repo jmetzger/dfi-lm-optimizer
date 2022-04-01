@@ -31,7 +31,7 @@ https://github.com/saiive/saiive.live/releases
 
 ### Steps in SAIIVE (tested on macbook - osx) 
 
-I. Now you need to import your wallet using the 24 words 
+I. Download / Install / Import Wallket (24 words) 
 
   1. Download saiive.live and install it.
   2. Open App saiive.live
