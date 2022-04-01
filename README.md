@@ -17,6 +17,8 @@ on the smallest droplet (virtual machine) on DigitalOcean or on your Raspberry P
 
 ## PreRequisites (Obtain private key)
 
+### General 
+
 To be able to let this work, you will need you private key of your DeFiChain Light Wallet (mobile) 
 Because it is not possible to extract it directly from the app, you will need to do the following 
 steps (it does not work with saiive.live - mobile version IOS !!) 
@@ -24,14 +26,27 @@ steps (it does not work with saiive.live - mobile version IOS !!)
 Download saiive.live - wallet for your Desktop (tested it on OSX, but should work the same for Windows) 
 https://apps.apple.com/app/saiive-live-defi-wallet/id1588945201
 
-Now you need to import your wallet using the 24 words 
+If this download is not working, take it from github (releases):
+https://github.com/saiive/saiive.live/releases
 
-After that saivve should: 
+### Steps in SAIIVE (tested on macbook - osx) 
+
+I. Now you need to import your wallet using the 24 words 
+
+  1. Download saiive.live and install it.
+  2. Open App saiive.live
+  3. Import Wallet / Wallet importieren (German) 
+  4. Agree to Terms of Usage
+  5. Enter a new pin (need to remember this one) 
+  6. Enter you 24 words (you should have noted or get from DFI Lite Wallet) + click on the button
+  7. Be patient, it will take its time 
+
+II. After that saivve should: 
   * Present you one wallet (in my case: DFIJellyFishBS1) 
   * Click on that wallet 
   * Now that wallet should get imported 
 
-After the wallet is imported: 
+III. After the wallet is imported: 
   * Click on accounts (let menu) 
   * Click on DFIJellyFishBS1 (right window)
   * Identify your wallet (by the hash). In most cases it should be the first one 
