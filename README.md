@@ -47,7 +47,7 @@ II. After that saivve should:
   * Now that wallet should get imported 
 
 III. After the wallet is imported: 
-  * Click on accounts (let menu) 
+  * Click on accounts / Konten(German) (left menu) 
   * Click on DFIJellyFishBS1 (right window)
   * Identify your wallet (by the hash). In most cases it should be the first one 
   * Click on it and scroll down to "expert mode" and click on this area
@@ -77,7 +77,8 @@ docker logs dfi_lm_optimizer_1
 # This is created when I perform a pull request to the branch release 
 git clone https://github.com/jmetzger/dfi-lm-optimizer 
 cd dfi-lm-optimizer/kubernetes 
-# only testing on osx and envsubst tool is needed (needs to be installed) 
+# only tested on osx 
+# (envsubst tool is needed (needs to be installed)) 
 # The reason to use this, i do not want to publish my private key ;o)
 # Hint: MAC: brew install gettext
 # Hint: RedHat/Centos :: yum install -y gettext
